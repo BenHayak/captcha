@@ -47,7 +47,7 @@ var captchas = [];
 	    //GOCR is a library for OCR
         //In this simple captchas it is enough
 		var text = GOCR(segmentacao)
-		ocr.value = text.toUpperCase();
+		document.getElementsByName("captcha")[0].value = text.toUpperCase();
 	}
 
     //It is not possible to access pixelData for images from external domains, so just using some samples from cpatcha source
