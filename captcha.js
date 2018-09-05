@@ -5,7 +5,7 @@ var captchas = [];
 		if (captchas.idx >= captchas.length)
 			captchas.idx = 0;
 
-		captcha.src = captchas[captchas.idx];
+		captcha1.src = captchas[captchas.idx];
 
 		container.style.display = 'none';
 		/*
@@ -21,7 +21,7 @@ var captchas = [];
 
 		var canvas = segmentacao;
 		var ctx = canvas.getContext('2d');
-		ctx.drawImage(captcha, 0, 0);
+		ctx.drawImage(captcha1, 0, 0);
 
 		var pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
